@@ -8,7 +8,7 @@ body{
     color: whitesmoke;
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;;
+    gap: 32px;
 }
 
 /*Start*/
@@ -71,7 +71,7 @@ main{
     background-color :#21272F;
     border-radius: 16px;
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(150px, 1fr) ) ;
+    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr) ) ;
     grid-template-areas: "a b c";
 }
 
@@ -190,5 +190,75 @@ time{
     grid-area: c;
     padding: 14px;
     margin: 14px;
+    display: grid;
+    grid-template-rows: auto;
+    gap: 16px;   
+}
+#c ol{
+    list-style: decimal-leading-zero;
+}
+#itemc{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1A2028;
+    padding: 10px;
+    border-radius: 34px;
+}
+.item-c{
+    color: whitesmoke;
+    background-color: transparent;
+    padding: 9px 13px;
+    border-radius: 32px ;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        background-color: #353A3F;
+    }
+}
+#list-game{
+    background-color: #1A2028;
+    padding: 20px;
+    margin: 2px;
+    border-radius: 20px;
+    height: 300px; 
+    overflow: scroll;
+}
+hr{
+    border: none; 
+    height: 2px;
+    background: #353A3F;
+}
+#otro{
+    position:relative;
+}
+#list-game button{
+    color: whitesmoke;
+    background-color: #353A3F;;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin: 23px;
+}
+.lis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
 }
 
+
+
+
+#categorys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+.game-category{
+    background-color:#21272F;
+    padding: 10px;
+    border-radius: 12px;
+}
